@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <meta charset="utf-8">
+  <title>Sign up</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet"href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"/>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=STIX+Two+Text:ital,wght@0,400;1,400;1,500&display=swap" rel="stylesheet">
+<body>
+  <div class="container"> 
+      <div class="navbar">
+        <div class="logo">
+          <img src="file:///C:/Users/Omar/Desktop/Mazack/images/Mylogo1.png"width="125px">
+        </div>
+          <nav>
+              <ul id="Menuitems">
+         <li><a  href="file:///C:/Users/Omar/Desktop/Mazack%20-%20Copy/index.html"target="_BLANK">Home</a></li>
+               <li><a  href="Products.html"target="_BLANK">Products</a></li>
+              <li><a  href="contact.html"target="_BLANK">Contact us</a></li>
+                <li><a  href="sign up.html"target="_BLANK">Sign up</a></li>
+
+              </ul>
+          </nav>
+        <i class="fas fa-shopping-cart" width="30px" height="30px"></i>
+        </div>  
+    </div>
+
+<!-----account-page------>
+
+<div class="account-page">
+  <div class="container">
+    <div class="row">
+      <div class="col-2">
+         <img src="file:///C:/Users/Omar/Desktop/Mazack/images/backpack.png">
+      </div>
+       <div class="col-2">
+          <div class="form-container">
+            <div class="form-btn">
+               <span onclick="login()">Login</span>
+               <span onclick="register()">Registre</span>
+               <hr id="Indicator">
+            </div> 
+          <form id="LoginForm">
+             <input type="Text" placeholder="Username">
+             <input type="password" placeholder="Password">
+             <button type="submit" class="btn">Login</button>
+             <a href="">Forget password</a>
+          </form>
+
+            <form id="RegForm">
+             <input type="Text" placeholder="Username">
+             <input type="email" placeholder="Email">
+             <input type="password" placeholder="Password">
+             <button type="submit" class="btn">Regiter</button>
+
+          </form>
+
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+      
+<!-----footer----->
+
+   <div class="footer">
+     <div class="container">
+      <div class="row">
+          <div class="footer-col-1">
+             <h3>Download our App</h3>
+             <p>Download App for Android and ios mobile phone.</p>
+              <div class="app-logo">
+                <img src="file:///C:/Users/Omar/Desktop/Mazack/images/t%C3%A9l%C3%A9ch778787.png">
+                  </div>
+                </div>
+            <div class="footer-col-2">
+                 <img src="file:///C:/Users/Omar/Desktop/Mazack%20-%20Copy/images/THE%20LOGO.png">
+                </div>
+             <div class="footer-col-3">
+                  <h3>Useful Links</h3>
+                  <ul>
+                    <li>Coupons</li>
+                    <li>Blog Post</li>
+                    <li>Return Policy</li>
+                    <li>Join Affiliate</li>
+                  </ul>
+             </div>
+              <div class="footer-col-4">
+                  <h3>Fllow us</h3>
+                  <ul>
+                    <li>Facebook</li>
+                    <li><a  href="https://www.instagram.com/hype_company2/"target="_BLANK">Instagram</a></li>
+                    <li>Twitter</li>
+                    <li>Youtube</li>
+                  </ul>
+             </div>
+         </div>
+         <hr>
+            <p class="Copyright">Copyright &copy; 2021 - Mazack </p>
+     </div>
+  </div>
+
+<!--------js for toggle menu-------->
+
+   <script > 
+
+  var Menuitems = document.getEle,entByid"(Menuitems)"
+    Menuitems.style.maxHeight="0px";
+      function menutoggle (){
+         if(Menuitems.style.maxHeight=="0px")
+         {
+           Menuitems.style.maxHeight="200px";
+         }
+         else
+         {
+        Menuitems.style.maxHeight="0px;"
+         }
+   }
+   </script> 
+
+   <script>
+     var ProductImg= document.getElementById("ProductImg");
+     var SmallImg=document.getElementByClassName("small-img");
+     SmallImg[0].onclick=function()
+     { 
+           ProductImg.src=SmallImg[0].src;
+     }
+
+     SmallImg[1].onclick=function()
+     { 
+           ProductImg.src=SmallImg[1].src;
+     }
+          SmallImg[2].onclick=function()
+     { 
+           ProductImg.src=SmallImg[2].src;
+     }
+          SmallImg[3].onclick=function()
+     { 
+           ProductImg.src=SmallImg[3].src;
+     }
+   </script>
+
+<script>
+
+  var LoginForm = document.getElementById("LoginForm");
+  var RegForm = document.getElementById("RegForm");
+  var indicator = document.getElementById("indicator");
+
+       function register(){
+     
+         RegForm.style.transform  = "translateX(0px)";
+         LoginForm.style.transform  = "translateX(0px)";
+         Indicator.style.transform = "translateX(100px)";
+       }
+
+
+              function login(){
+     
+         RegForm.style.transform  = "translateX(300px)";
+         LoginForm.style.transform  = "translateX(300px)"; Indicator.style.transform = "translateX(0px)";
+
+       }
+ 
+ 
+</script>
+
+
+
+
+ </body>  
+</html>
